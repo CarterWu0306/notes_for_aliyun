@@ -60,7 +60,7 @@
 `dubbo.admin.root.password=root`\
 `dubbo.admin.guest.password=guest`\
 2.2 部署完成后,先启动zookeeper,再启动tomcat,在浏览器中访问`http://服务器ip:8080/dubbo-admin/`输入用户名密码后可以看到dubbo的图形用户管理界面\
-![](https://github.com/CarterWu0306/notes_for_aliyun/blob/master/%E9%98%BF%E9%87%8C%E4%BA%91%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.files/2265.png)\
+![](https://github.com/CarterWu0306/notes_for_aliyun/blob/master/%E9%98%BF%E9%87%8C%E4%BA%91%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.files/2265.png)
 ## 六、Nginx安装
 ## 七、VSFTPD安装
 ## 八、Mosquitto安装
