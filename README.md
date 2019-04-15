@@ -31,6 +31,7 @@
 2.4 设置iptables开机启动\
 `systemctl enable iptables.service`\
 2.5 去阿里云管理控制台添加8080端口的安全组\
+![](https://github.com/CarterWu0306/notes_for_aliyun/blob/master/%E9%98%BF%E9%87%8C%E4%BA%91%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.files/1222.png)\
 2.6 查看开放端口 `netstat -tlunp`\
 2.7解决8005端口报错tomcat未成功启动和无法关闭的问题\
 `#修改$JAVA_HOME/jre/lib/security/java.security 文件中 securerandom.source 配置项`\
@@ -45,7 +46,9 @@
 `cp zoo_sample.cfg zoo.cfg`\
 2.3 修改zoo.cfg中dataDir属性值为新建data文件夹的路径\
 `vim zoo.cfg`\
+![](https://github.com/CarterWu0306/notes_for_aliyun/blob/master/%E9%98%BF%E9%87%8C%E4%BA%91%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.files/1661.png)\
 2.4 进入zookeeper/bin目录,使用zkServer.sh start 启动zookeeper\
+![](https://github.com/CarterWu0306/notes_for_aliyun/blob/master/%E9%98%BF%E9%87%8C%E4%BA%91%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.files/1718.png)\
 2.5 开放2181端口\
 `-A INPUT -p tcp -m state --state NEW -m tcp --dport 8080 -j ACCEPT`
 ## 五、Dubbo安装
@@ -57,6 +60,7 @@
 `dubbo.admin.root.password=root`\
 `dubbo.admin.guest.password=guest`\
 2.2 部署完成后,先启动zookeeper,再启动tomcat,在浏览器中访问`http://服务器ip:8080/dubbo-admin/`输入用户名密码后可以看到dubbo的图形用户管理界面\
+![](https://github.com/CarterWu0306/notes_for_aliyun/blob/master/%E9%98%BF%E9%87%8C%E4%BA%91%E6%90%AD%E5%BB%BA%E7%AC%94%E8%AE%B0.files/2265.png)\
 ## 六、Nginx安装
 ## 七、VSFTPD安装
 ## 八、Mosquitto安装
